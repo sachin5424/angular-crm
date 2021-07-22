@@ -1,0 +1,72 @@
+.left-sidebar {
+    height: 1365px;
+    width: 190px;
+    border-radius: 0 0 10px 10px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 21px 8px rgba(12,93,176,0.14);
+  }
+
+
+  .Broadcasts-card {
+    height: 223px;
+    width: 190px;
+    border-radius: 8px;
+    background: linear-gradient(310.91deg, #736DFF 0%, #A97FFF 100%);
+  }
+  .Broadcasts-card h1 {
+    height: 19px;
+    width: 123px;
+    color: #FFFFFF;
+    font-family: "Helvetica Neue";
+    font-size: 18px;
+    padding-top: 20px !important;
+    letter-spacing: 0;
+    line-height: 19px;
+  }
+  .Broadcasts-card line {
+    box-sizing: border-box;
+    height: 1.48px;
+    width: 190px;
+    border: 1px solid #DDE1EE !important;
+    opacity: 0.5;
+  }
+  .Broadcasts-card p {
+    padding-left: 10px;
+  height: 28px;
+  width: 85px;
+  color: #FFFFFF;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  }
+
+  .custom-mini-icon {
+    height: 16px;
+    width: 45px;
+    border-radius: 8px;
+    color: black;
+    font-size: 16px;
+  
+    color: #3B3B3B;
+    font-family: "Helvetica Neue";
+    background-color: #FFFFFF;
+  }
+ .custom-number-mini-icon{
+  padding: 10px 10px 10px;
+  /* background: red; */
+  color: white;
+  /* margin-top: 20% !important; */
+  font-weight: bolder;
+  border-radius: 100%;
+  height: 32px;
+  width: 32px;
+  background-color:#766EFF
+ }
+  .custom-mini-icon-text {
+    height: 12px;
+  width: 32px;
+  color: #3B3B3B;
+  font-family: "Helvetica Neue";
+  }
+  owl-carousel-o{
+      z-index: -11;
+  }

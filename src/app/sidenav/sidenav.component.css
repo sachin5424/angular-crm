@@ -1,0 +1,13 @@
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+    box-shadow:none !important;
+    color: #0078E9 !important;
+}
+mat-list-option {
+ 
+    color: #0078E9 !important;
+    font-family: "Helvetica Neue" !important;
+    font-size: 11px;
+    font-weight: 500 !important;
+    letter-spacing: 0;
+    line-height: 30px;
+  }

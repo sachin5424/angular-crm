@@ -1,0 +1,14 @@
+.date {
+    height: 24px;
+    border-radius: 3px;
+    background-color: #D8E0ED;
+  }
+  
+  .cardText{
+    height: 40px;
+    color: #3B3B3B;
+    font-family: "Helvetica Neue";
+    font-size: 11px;
+    letter-spacing: 0;
+    /* line-height: 20px; */
+  }

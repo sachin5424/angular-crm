@@ -1,0 +1,57 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+     <app-sidenav></app-sidenav>
+     <mat-list>
+      <mat-list-item  (click)="drawer.toggle()"> Close </mat-list-item>
+      
+      </mat-list>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span (click)="drawer.toggle()">BB-Builder</span>
+      <span class="example-spacer"></span>
+      <button  mat-button [matMenuTriggerFor]="menu">Welcome,<span class="welcome-admin">Mr. Mukesh Ambani</span> 
+        <mat-icon>keyboard_arrow_down</mat-icon>
+      </button>
+      <div class="oval-icon">
+        <img class="oval" src="assets/sachin.jpg"  alt="">
+      </div>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <app-dashboard></app-dashboard>
+    
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<mat-menu class="rectangle-20" #menu="matMenu">
+  <button mat-menu-item>
+    <span>Edit Profile</span>
+  </button>
+  <button mat-menu-item >
+    <span>Contact BB</span>
+  </button>
+  <button mat-menu-item>
+    <span>Terms & Conditions </span>
+  </button>
+ <mat-divider [vertical]="false" [inset]="false"></mat-divider>
+ <!-- 'mat-button','mat-raised-button', 'mat-flat-button','mat-stroked-button','mat-icon-button','mat-fab','mat-mini-fab' -->
+ <button mat-menu-item>
+  <mat-icon>logout</mat-icon>
+  <span>Log out</span>
+</button>
+</mat-menu>
